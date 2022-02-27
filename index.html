@@ -107,6 +107,48 @@
 <div class="index-outer">
   <section class="index-main">
     
+      <article id="post-index" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-02-25T14:22:11.000Z" itemprop="datePublished">2022-02-25</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">springboot</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="初步搭建springboot应用，报错：Failed-to-configure-a-DataSource-‘url’-attribute-is-not-specified-and-no-embedd"><a href="#初步搭建springboot应用，报错：Failed-to-configure-a-DataSource-‘url’-attribute-is-not-specified-and-no-embedd" class="headerlink" title="初步搭建springboot应用，报错：Failed to configure a DataSource: ‘url’ attribute is not specified and no embedd"></a>初步搭建springboot应用，报错：Failed to configure a DataSource: ‘url’ attribute is not specified and no embedd</h1><p>原因是pom文件打包成了pom，去掉<packaging>pom</packaging>即可。所有的父级项目的pom文件的打包方式都要设置成pom，子项目设置为jar或者不设置（默认为jar），如果纯一个项目不设置<packaging>默认打包为jar即可。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
       <article id="post-day6" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -435,6 +477,10 @@
       <ul>
         
           <li>
+            <a href="/archives/undefined.html">springboot</a>
+          </li>
+        
+          <li>
             <a href="/archives/undefined.html">maven的安装与配置</a>
           </li>
         
@@ -448,10 +494,6 @@
         
           <li>
             <a href="/archives/undefined.html">《20岁》</a>
-          </li>
-        
-          <li>
-            <a href="/archives/undefined.html">《好像一条狗》</a>
           </li>
         
       </ul>
