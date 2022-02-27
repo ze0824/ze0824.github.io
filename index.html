@@ -107,7 +107,7 @@
 <div class="index-outer">
   <section class="index-main">
     
-      <article id="post-index" class="h-entry article article-type-post"
+      <article id="post-day7" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <p class="article-date">
@@ -141,6 +141,10 @@
     <footer class="article-footer">
       
       
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
+  </div>
+
 
       
     </footer>
@@ -399,7 +403,7 @@
 </article>
 
     
-      <article id="post-hello-world" class="h-entry article article-type-post"
+      <article id="post-day8" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <p class="article-date">
@@ -417,7 +421,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">《面朝大海，春暖花开》</a>
+      <a class="p-name article-title" href="/archives/undefined.html">JVM堆</a>
     </h1>
   
 
@@ -426,27 +430,67 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <meta name="referrer" content="no-referrer" />
+        <p>新生代包括Eden区、survivor区；老年代是old区。常量池属于方法区PermGen。</p>
+<p>JVM提供三个ClassLoader，层级由高到低。</p>
+<p>BootStrap classLoader，加载JVM自身工作类；</p>
+<p>Extension classLoader，加载目录下类；</p>
+<p>Application classLoader，加载classpath指定类。</p>
+<p>JVM工作流程：类加载器—&gt;字节码校验器—&gt;翻译字节码—&gt;编译执行</p>
 
-<p>​                        海子</p>
-<p>　　从明天起，做一个幸福的人</p>
-<p>　　喂马，劈柴，周游世界</p>
-<p>　　从明天起，关心粮食和蔬菜</p>
-<p>　　我有一所房子，面朝大海，春暖花开</p>
-<p>　　从明天起，和每一个亲人通信</p>
-<p>　　告诉他们我的幸福，那幸福的闪电告诉我的</p>
-      
-        <p class="article-more-link">
-          <a href="/archives/undefined.html#more">Read More</a>
-        </p>
-      
       
     </div>
     <footer class="article-footer">
       
       
   <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%97%E6%AD%8C/" rel="tag">诗歌</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JVM/" rel="tag">JVM</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-day9" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2021-12-06T05:25:37.000Z" itemprop="datePublished">2021-12-06</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">this与super的区别</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p> this访问本类属性、方法、构造器；</p>
+<p>super访问父类的属性、方法、构造器。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
   </div>
 
 
@@ -465,7 +509,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/" rel="tag">maven</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E8%AE%B0/" rel="tag">杂记</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%86%E9%A2%91/" rel="tag">视频</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%97%E6%AD%8C/" rel="tag">诗歌</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/" rel="tag">JVM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/" rel="tag">maven</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E8%AE%B0/" rel="tag">杂记</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%86%E9%A2%91/" rel="tag">视频</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
