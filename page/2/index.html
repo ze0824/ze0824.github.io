@@ -25,7 +25,7 @@
   <meta name="description" content="private&amp;study&amp;CS">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ZeBetter">
-<meta property="og:url" content="http://zebetter.top/index.html">
+<meta property="og:url" content="http://zebetter.top/page/2/index.html">
 <meta property="og:site_name" content="ZeBetter">
 <meta property="og:description" content="private&amp;study&amp;CS">
 <meta property="og:locale" content="zh_CN">
@@ -107,11 +107,11 @@
 <div class="index-outer">
   <section class="index-main">
     
-      <article id="post-0322-3" class="h-entry article article-type-post"
+      <article id="post-day3" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <p class="article-date">
-  <time class="dt-published" datetime="2022-03-22T05:25:37.000Z" itemprop="datePublished">2022-03-22</time>
+  <time class="dt-published" datetime="2021-12-18T12:05:08.000Z" itemprop="datePublished">2021-12-18</time>
 </p>
 
     
@@ -125,7 +125,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">HashMap的底层实现</a>
+      <a class="p-name article-title" href="/archives/undefined.html">端口被占用解决办法</a>
     </h1>
   
 
@@ -134,437 +134,14 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>JDK1.8之前底层实现是数组+链表，采用头插法，容易造成环形链表和死循环。</p>
-<p>JDK1.8之后底层实现是数组+红黑树，采用尾插法，避免了环形链表和死循环，但是并发下的key值也可能被覆盖。</p>
+        <h3 id="服务端口被占用的解决办法"><a href="#服务端口被占用的解决办法" class="headerlink" title="服务端口被占用的解决办法"></a>服务端口被占用的解决办法</h3><p>参照3306端口：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">netstat  -aon|findstr 3306</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li></ul>
-  </div>
+<p>通过pid号来查找占用的服务</p>
+<p><img src="https://img-blog.csdnimg.cn/20200502183750948.png"></p>
+<p><strong>ctrl +shift+esc调出任务管理器</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/20200502184341549.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjE5NDYx,size_16,color_FFFFFF,t_70"></p>
 
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0322-1" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">Redis的高并发问题以及解决办法</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1.缓存雪崩：Redis中大量缓存失效，同时大量请求发起，导致直接访问数据库，冲垮数据库服务器。解决办法是加锁、key值的失效时间设置成随机。</p>
-<p>2.缓存击穿：Redis中单个缓存失效，但是多个请求同时访问这个key，导致冲垮数据库。解决办法是加锁、设置缓存永不失效。</p>
-<p>3.缓存穿透：访问的数据在Redis和数据亏都没有，并发过大。解决办法是将无效的值也缓存，设置为null。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Redis/" rel="tag">Redis</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0322-2" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">Arraylist和Linkedlist的区别</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Arraylist是动态数组的结构，适合对数据进行查询、访问操作，内存大小固定。</p>
-<p>Linkedlist是双向链表实现，适合对数进行删除、添加操作，内存大小随数据变化而变化。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0322-4" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">equals()方法和==的区别</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>==：常用于比较基本数据类型，比较的是数据的内存地址是否相同。</p>
-<p>equals()：没有进行重写的话，跟==相同；重写了的话比较的是数据值是否相同。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0322-5" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">接口与抽象类的区别</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>相同点：都不能直接被实例化；需要实现了接口和方法才能被实例化</p>
-<p>不同点：接口只能定义抽象方法不能实现方法，抽象类既可以定义抽象方法，也可以实现方法；一个类可以有多个接口，但是只能有一个抽象类；接口强调的是功能，而抽象类强调的所属关系；接口实现implements，抽象类是extends。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0322" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">重写与重载的区别</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>重写：发生在子类父类中，子类对父类的方法进行重写，方法名、参数列表都必须相同；而且返回值、抛出异常都必须在父类方法以内，访问修饰符要大于等于父类方法。还有如果父类方法的修饰符为private，则子类不能进行重写。</p>
-<p>重载：放生在同一个类中，方法名相同，但是里面的参数列表不同。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-day10" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">String、StringBuffer、StringBuilder的区别</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>String：不可变字符串类</p>
-<p>StringBuffer：长度可变的字符串类，因为被synchronized修饰，所以线程安全。但是加锁了，所以性能偏低。</p>
-<p>StringBuilder：也是长度可变的字符串类，性能偏高，但是线程不安全。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-day7" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-02-25T14:22:11.000Z" itemprop="datePublished">2022-02-25</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">springboot</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="初步搭建springboot应用，报错：Failed-to-configure-a-DataSource-‘url’-attribute-is-not-specified-and-no-embedd"><a href="#初步搭建springboot应用，报错：Failed-to-configure-a-DataSource-‘url’-attribute-is-not-specified-and-no-embedd" class="headerlink" title="初步搭建springboot应用，报错：Failed to configure a DataSource: ‘url’ attribute is not specified and no embedd"></a>初步搭建springboot应用，报错：Failed to configure a DataSource: ‘url’ attribute is not specified and no embedd</h1><p>原因是pom文件打包成了pom，去掉<packaging>pom</packaging>即可。所有的父级项目的pom文件的打包方式都要设置成pom，子项目设置为jar或者不设置（默认为jar），如果纯一个项目不设置<packaging>默认打包为jar即可。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-day6" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-01-06T13:59:26.000Z" itemprop="datePublished">2022-01-06</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">maven的安装与配置</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1.下载maven</p>
-<p><img src="https://img-blog.csdnimg.cn/2021042022371177.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTkwMTg1,size_16,color_FFFFFF,t_70"></p>
-<p><img src="https://img-blog.csdnimg.cn/20210420225426760.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTkwMTg1,size_16,color_FFFFFF,t_70"></p>
-<hr>
-      
-        <p class="article-more-link">
-          <a href="/archives/undefined.html#more">Read More</a>
-        </p>
-      
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/maven/" rel="tag">maven</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-day4" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2021-12-18T12:13:20.000Z" itemprop="datePublished">2021-12-18</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">mysql输入错误退出</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h6 id="直接使用"><a href="#直接使用" class="headerlink" title="直接使用"></a>直接使用</h6><h4 id="ctrl-c"><a href="#ctrl-c" class="headerlink" title="ctrl+c"></a>ctrl+c</h4>
       
     </div>
     <footer class="article-footer">
@@ -582,11 +159,209 @@
 </article>
 
     
+      <article id="post-day2" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2021-12-11T04:02:07.000Z" itemprop="datePublished">2021-12-11</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">《20岁》</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <img src="https://wx4.sinaimg.cn/mw2000/0068LkN1gy1gx9rfg9kv9j30u00u0tly.jpg" alt="" style="zoom:150%;" />
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9D%82%E8%AE%B0/" rel="tag">杂记</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-day1" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2021-12-09T12:27:13.000Z" itemprop="datePublished">2021-12-09</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">《好像一条狗》</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <meta name="referrer" content="no-referrer" />
+
+
+
+<img src="https://wx1.sinaimg.cn/bmiddle/007v5F0lgy1gq1oz4gifqj30u013awfs.jpg" alt="" style="zoom:150%;" />
+      
+        <p class="article-more-link">
+          <a href="/archives/undefined.html#more">Read More</a>
+        </p>
+      
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%86%E9%A2%91/" rel="tag">视频</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-day8" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2021-12-06T05:25:37.000Z" itemprop="datePublished">2021-12-06</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">JVM堆</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>新生代包括Eden区、survivor区；老年代是old区。常量池属于方法区PermGen。</p>
+<p>JVM提供三个ClassLoader，层级由高到低。</p>
+<p>BootStrap classLoader，加载JVM自身工作类；</p>
+<p>Extension classLoader，加载目录下类；</p>
+<p>Application classLoader，加载classpath指定类。</p>
+<p>JVM工作流程：类加载器—&gt;字节码校验器—&gt;翻译字节码—&gt;编译执行</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JVM/" rel="tag">JVM</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-day9" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2021-12-06T05:25:37.000Z" itemprop="datePublished">2021-12-06</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">this与super的区别</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p> this访问本类属性、方法、构造器；</p>
+<p>super访问父类的属性、方法、构造器。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
     
       <nav class="pagination" role="navigation">
   
+    <a class="newer-posts" href="/">← NEWER POSTS</a>
   
-    <a class="older-posts" href="/page/2/">OLDER POSTS →</a>
   
 </nav>
 
