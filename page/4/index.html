@@ -25,7 +25,7 @@
   <meta name="description" content="private&amp;study&amp;CS">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ZeBetter">
-<meta property="og:url" content="http://zebetter.top/index.html">
+<meta property="og:url" content="http://zebetter.top/page/4/index.html">
 <meta property="og:site_name" content="ZeBetter">
 <meta property="og:description" content="private&amp;study&amp;CS">
 <meta property="og:locale" content="zh_CN">
@@ -107,11 +107,11 @@
 <div class="index-outer">
   <section class="index-main">
     
-      <article id="post-0327-1" class="h-entry article article-type-post"
+      <article id="post-day6" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
+  <time class="dt-published" datetime="2022-01-06T13:59:26.000Z" itemprop="datePublished">2022-01-06</time>
 </p>
 
     
@@ -125,7 +125,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">数据库连接</a>
+      <a class="p-name article-title" href="/archives/undefined.html">maven的安装与配置</a>
     </h1>
   
 
@@ -134,23 +134,22 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>GROUP BY 分组查询，Order by 排序（DESC 倒叙，ASC 正序）；</p>
-<p>LEFT JOIN：左连接（返回左表中所有记录以及右表连接字段相等的记录）</p>
-<p>RIGHT JOIN：右连接（返回右表中所有记录以及左表中连接字段相等的记录)</p>
-<p>INNER JOIN：内连接（只返回两表的连接字段相等的记录）</p>
-<p>OUTER JOIN：外连接（返回左右表的全部记录以及两表连接字段相等的记录）</p>
-<p>Where和Having的区别：</p>
-<p>Where在GROUP BY之前，而Having在GROUP BY之后；</p>
-<p>Where不可以用聚合函数，而Having可以用（COUNT、SUM、AVG、MAX）；</p>
-<p>Where –&gt; GROUP BY –&gt; HAVING –&gt; ORDER BY</p>
-
+        <p>1.下载maven</p>
+<p><img src="https://img-blog.csdnimg.cn/2021042022371177.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTkwMTg1,size_16,color_FFFFFF,t_70"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210420225426760.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTkwMTg1,size_16,color_FFFFFF,t_70"></p>
+<hr>
+      
+        <p class="article-more-link">
+          <a href="/archives/undefined.html#more">Read More</a>
+        </p>
+      
       
     </div>
     <footer class="article-footer">
       
       
   <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/maven/" rel="tag">maven</a></li></ul>
   </div>
 
 
@@ -161,11 +160,11 @@
 </article>
 
     
-      <article id="post-0327-10" class="h-entry article article-type-post"
+      <article id="post-day4" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
+  <time class="dt-published" datetime="2021-12-18T12:13:20.000Z" itemprop="datePublished">2021-12-18</time>
 </p>
 
     
@@ -179,7 +178,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">多线程五种状态、实现步骤</a>
+      <a class="p-name article-title" href="/archives/undefined.html">mysql输入错误退出</a>
     </h1>
   
 
@@ -188,29 +187,14 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p> 创建 —&gt; 就绪 —&gt; 运行 —&gt; 阻塞 —&gt; 死亡</p>
-<h2 id="1-继承方式"><a href="#1-继承方式" class="headerlink" title="1.继承方式"></a>1.继承方式</h2><p>1.自己定义一个类，这个类去继承一个Thread类</p>
-<p>2.在自定义的类当中，去重写Thread类的一个run方法。</p>
-<h2 id="2-实现Runnable接口"><a href="#2-实现Runnable接口" class="headerlink" title="2.实现Runnable接口"></a>2.实现Runnable接口</h2><p>1.自定义一个任务类，实现Runnable接口</p>
-<p>2.重写Runnable接口当中的run方法</p>
-<p>3.在主方法中创建自定义的任务类对象</p>
-<p>4.创建Thread对象，通过构造方法把任务类对象给传递进去</p>
-<p>5.使用Thread对象调用start方法，启动线程。</p>
-<h2 id="3-实现Callable接口"><a href="#3-实现Callable接口" class="headerlink" title="3.实现Callable接口"></a>3.实现Callable接口</h2><p>1.定义一个类MyCallable实现Callable接口</p>
-<p>2.在MyCallable类中重写call()方法</p>
-<p>3.创建MyCallable类的对象</p>
-<p>4.创建Future的实现类FutureTask对象，把MyCallable对象作为构造方法的参数</p>
-<p>5.创建Thread类的对象，把FutureTask对象作为构造方法的参数</p>
-<p>6.使用Thread类的对象调用start方法启动线程</p>
-<p>7.FutureTask对象用get方法，就可以获取线程结束之后的结果</p>
-
+        <h6 id="直接使用"><a href="#直接使用" class="headerlink" title="直接使用"></a>直接使用</h6><h4 id="ctrl-c"><a href="#ctrl-c" class="headerlink" title="ctrl+c"></a>ctrl+c</h4>
       
     </div>
     <footer class="article-footer">
       
       
   <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li></ul>
   </div>
 
 
@@ -221,11 +205,11 @@
 </article>
 
     
-      <article id="post-0327-11" class="h-entry article article-type-post"
+      <article id="post-day3" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
+  <time class="dt-published" datetime="2021-12-18T12:05:08.000Z" itemprop="datePublished">2021-12-18</time>
 </p>
 
     
@@ -239,7 +223,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">JVM的GC垃圾回收机制</a>
+      <a class="p-name article-title" href="/archives/undefined.html">端口被占用解决办法</a>
     </h1>
   
 
@@ -248,22 +232,164 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p> JVM堆  </p>
-<p> (1) 新域：存储所有新成生的对象  新域会被分为3个部分：1.第一个部分叫Eden。2.另两个部分称为辅助生存空间(幼儿园)，我这里一个称为A空间(From sqace)，一个称为B空间(To Space)。</p>
-<p>(2) 旧域：新域中的对象，经过了一定次数的GC循环后，被移入旧域  </p>
-<p> (3)永久域：存储类和方法对象，从配置的角度看，这个域是独立的，不包括在JVM堆内。默认为4M。</p>
-<p><strong>GC总结</strong></p>
-<p>[if !supportLists]1. [endif]JVM堆的大小决定了GC的运行时间。如果JVM堆的大小超过一定的限度，那么GC的运行时间会很长。2.对象生存的时间越长，GC需要的回收时间也越长，影响了回收速度。3.大多数对象都是短命的，所以，如果能让这些对象的生存期在GC的一次运行周期内，wonderful！4.应用程序中，建立与释放对象的速度决定了垃圾收集的频率。5.如果GC一次运行周期超过3-5秒，这会很影响应用程序的运行，如果可以，应该减少JVM堆的大小了。6.前辈经验之谈：通常情况下，JVM堆的大小应为物理内存的80%。</p>
-<p><strong>垃圾回收的基本原理****（</strong>算法思路都是一致的：把所有对象组成一个集合，或可以理解为树状结构，从树根开始找，只要可以找到的都是活动对象，如果找不到，这个对象就被回收了<strong>）</strong></p>
-<p><em><strong>如何找到需要回收的对象</strong></em></p>
-<p>1、引用计数法：给对象中添加一个引用计数器，每当一个地方引用这个对象时，计数器值+1；当引用失效时，计数器值-1。任何时刻计数值为0的对象就是不可能再被使用的。</p>
-<p>2、可达性分析法:对于可达性分析算法而言，未到达的对象并非是“非死不可”的，若要宣判一个对象死亡，至少需要经历两次标记阶段。</p>
-<p><strong>Java有了GC同样会出现内存泄露问题</strong></p>
-<p>1.静态集合类像HashMap、Vector等的使用最容易出现内存泄露，这些静态变量的生命周期和应用程序一致，所有的对象Object也不能被释放，因为他们也将一直被Vector等应用着。</p>
-<p>2.各种连接，数据库连接，网络连接，IO连接等没有显示调用close关闭，不被GC回收导致内存泄露。</p>
-<p>3.监听器的使用，在释放对象的同时没有相应删除监听器的时候也可能导致内存泄露。</p>
-<p>垃圾回收器负责回收所有无任何引用对象的内存空间。</p>
-<p>注意：垃圾回收回收的是无任何引用的对象占据的内存空间而不是对象本身。</p>
+        <h3 id="服务端口被占用的解决办法"><a href="#服务端口被占用的解决办法" class="headerlink" title="服务端口被占用的解决办法"></a>服务端口被占用的解决办法</h3><p>参照3306端口：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">netstat  -aon|findstr 3306</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>通过pid号来查找占用的服务</p>
+<p><img src="https://img-blog.csdnimg.cn/20200502183750948.png"></p>
+<p><strong>ctrl +shift+esc调出任务管理器</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/20200502184341549.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjE5NDYx,size_16,color_FFFFFF,t_70"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-day2" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2021-12-11T04:02:07.000Z" itemprop="datePublished">2021-12-11</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">《20岁》</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <img src="https://wx4.sinaimg.cn/mw2000/0068LkN1gy1gx9rfg9kv9j30u00u0tly.jpg" alt="" style="zoom:150%;" />
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9D%82%E8%AE%B0/" rel="tag">杂记</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-day1" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2021-12-09T12:27:13.000Z" itemprop="datePublished">2021-12-09</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">《好像一条狗》</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <meta name="referrer" content="no-referrer" />
+
+
+
+<img src="https://wx1.sinaimg.cn/bmiddle/007v5F0lgy1gq1oz4gifqj30u013awfs.jpg" alt="" style="zoom:150%;" />
+      
+        <p class="article-more-link">
+          <a href="/archives/undefined.html#more">Read More</a>
+        </p>
+      
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%86%E9%A2%91/" rel="tag">视频</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-day8" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2021-12-06T05:25:37.000Z" itemprop="datePublished">2021-12-06</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">JVM堆</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>新生代包括Eden区、survivor区；老年代是old区。常量池属于方法区PermGen。</p>
+<p>JVM提供三个ClassLoader，层级由高到低。</p>
+<p>BootStrap classLoader，加载JVM自身工作类；</p>
+<p>Extension classLoader，加载目录下类；</p>
+<p>Application classLoader，加载classpath指定类。</p>
+<p>JVM工作流程：类加载器—&gt;字节码校验器—&gt;翻译字节码—&gt;编译执行</p>
 
       
     </div>
@@ -282,11 +408,11 @@
 </article>
 
     
-      <article id="post-0327-2" class="h-entry article article-type-post"
+      <article id="post-day9" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
+  <time class="dt-published" datetime="2021-12-06T05:25:37.000Z" itemprop="datePublished">2021-12-06</time>
 </p>
 
     
@@ -300,7 +426,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">Linux基础命令</a>
+      <a class="p-name article-title" href="/archives/undefined.html">this与super的区别</a>
     </h1>
   
 
@@ -309,9 +435,8 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p> 目录操作命令：创建 mikdir；删除 rm；修改 mv；查找 find;</p>
-<p>文件操作命令：创建 touch；删除 rm；修改 vim；查找 ls；</p>
-<p>其他命令：查看当前目录：pwd；查看所有进程 ps -ef ；搜索 grep；实时显示进程信息 top；</p>
+        <p> this访问本类属性、方法、构造器；</p>
+<p>super访问父类的属性、方法、构造器。</p>
 
       
     </div>
@@ -319,300 +444,7 @@
       
       
   <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0327-3" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">多线程中Runnable和Callable的区别</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>相同：1、都是用来编写多线程的接口；2、都采用Thread.start()启动；</p>
-<p>不同：1、Runnable不能异常抛出，而Callable可以；2、Runnable没有返回值，而Callable可以返回执行结果；</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0327-5" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">OSI七层模式详解</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1、应用层 ——–文件传输协议（http、ftp、dns）</p>
-<p>2、表示层 ——–数据格式化，代码转换</p>
-<p>3、会话层</p>
-<p>4、传输层 ——–TCP、UDP</p>
-<p>5、网络层 ——– IP</p>
-<p>6、数据链路层 ——– ARP</p>
-<p>7、物理层 ———IEEE协议</p>
-<p>HTTP的主要方法有GET和POST;</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0327-4" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">几种排序算法</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1、快排排序： 时间复杂度O（nlogn） ；空间复杂度O（nlogn） 不稳定；</p>
-<p>2、冒泡排序： 时间复杂度O（n2）；空间复杂度O（1） 稳定；</p>
-<p>3、归并排序： 时间复杂度O（nlogn）;空间复杂度O（1） 稳定；</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" rel="tag">排序算法</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0327-6" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">数据库索引的优缺点</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>优点：1、加快检索速度；2、加快表之间的连接；3、提高系统性能；</p>
-<p>缺点：1、消耗时间、内存；2、降低数据维护速度；</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0327-7" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">数据库的MyISAM和InnoDB的区别</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>MyISAM的数据文件和索引文件分开的；而InnoDB的数据文件和索引文件在一起；</p>
-<p>区别：1、MyISAM非事务安全；而InnoDB事务安全；</p>
-<p>2、MyISAM支持表级锁；而InnoDB支持行级锁；</p>
-<p>3、前者支持全文索引；而后者不支持；</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0327-8" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">线程和进程的区别、通信方式</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>线程：cpu调度的最小单位；</p>
-<p>进程：系统资源分配的最小单位；</p>
-<p>线程通信方式：1、锁机制（互斥锁提供了以排他方式防止数据结构被并发修改的方法；<br>  读写锁允许多个线程同时读共享数据，而对写操作是互斥的。）；2、信号量机制；</p>
-<p>进程通风方式：1、消息队列；2、管道；3、信号量；</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
   </div>
 
 
@@ -626,8 +458,8 @@
     
       <nav class="pagination" role="navigation">
   
+    <a class="newer-posts" href="/page/3/">← NEWER POSTS</a>
   
-    <a class="older-posts" href="/page/2/">OLDER POSTS →</a>
   
 </nav>
 
