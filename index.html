@@ -282,6 +282,127 @@
 </article>
 
     
+      <article id="post-0327-12" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">远景测开面试题</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1、同一进程的线程哪些资源共享，堆和栈分别存储什么？</p>
+<p>每个线程拥有有各自的栈和寄存器中内容，所以线程之间共享堆空间；</p>
+<p>堆区存储：1、存储的全部是对象，每个对象都包含一个与之对应的class的信息。(class的目的是得到操作指令)；2、jvm只有一个堆区(heap)被所有线程共享，堆中不存放基本类型和对象引用，只存放对象本身 。</p>
+<p>栈区存储:1、每个线程包含一个栈区，栈中只保存基础数据类型的值和对象以及基础数据的引用；2、每个栈中的数据(基础数据类型和对象引用)都是私有的，其他栈不能访问；3、栈分为3个部分：基本类型变量区、执行环境上下文、操作指令区(存放操作指令)。</p>
+<p>方法区:1、又叫静态区，跟堆一样，被所有的线程共享。方法区包含所有的class和static变量；2、方法区中包含的都是在整个程序中永远唯一的元素，如class，static变量。</p>
+<p>2、☆ 路由器和交换机的区别：</p>
+<p>1、路由器实现了不同网络之间的数据转发，交换机实现了特定网络内的数据交换；2、交换机主要工作在数据链路层（第二层）；路由器工作在网络层（第三层）；3、交换机转发所依据的对象是MAC地址（物理地址），路由转发所依据的对象是是IP地址（网络址）；</p>
+<p>3、脏读、幻读怎么解决？</p>
+<p>mvcc 和 锁 都可以解决幻读、重复读问题。</p>
+<p>4、怎么保持数据的一致性？</p>
+<p>主要使用到的方法有synchronized<code>关键字、</code>volatile<code>关键字、</code>ReentrantLock<code>同步锁、</code>java.util.concurrent.atomic<code>工具包、</code>ThreadLocal等等</p>
+<p>5、线程池概念？</p>
+<p>是一种线程的使用模式，它为了降低线程使用中频繁的创建和销毁所带来的资源消耗与代价；通过创建一定数量的线程，让他们时刻准备就绪等待新任务的到达，而任务执行结束之后再重新回来继续待命。</p>
+<p>优点：</p>
+<ol>
+<li>避免了线程的重复创建与开销带来的资源消耗代价</li>
+<li>提升了任务响应速度，任务来了直接选一个线程执行而无需等待线程的创建</li>
+<li>线程的统一分配和管理，也方便统一的监控和调优</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B5%8B%E5%BC%80/" rel="tag">测开</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-0327-13" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">远景测开面试题</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p> 6、怎么处理并发问题？</p>
+<p>1、负载均衡；2、数据库集群；3、缓存</p>
+<p>7、如何设计数据库表（从安全、性能、高并发分析）？</p>
+<p>分库分表</p>
+<p>8、路由表怎么写？</p>
+<p>路由表是排除网络故障的。</p>
+<p>9、网关是什么？</p>
+<p>网关就是网间连接器、协议转换器。</p>
+<p>10、操作系统的内中断和外中断？</p>
+<p><strong>内、外中断</strong>的区别是该信号来源是否来自CPU内部还是外部；IO中断属于外中断。</p>
+<p>11、软件测试的W模型和V模型？</p>
+<p>V模型的目的在于改进软件开发的效率和效果；W模型有两个V字模型组成，分别代表测试与开发过程。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B5%8B%E5%BC%80/" rel="tag">测开</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
       <article id="post-0327-2" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -377,6 +498,54 @@
 </article>
 
     
+      <article id="post-0327-4" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">几种排序算法</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1、快排排序： 时间复杂度O（nlogn） ；空间复杂度O（nlogn） 不稳定；</p>
+<p>2、冒泡排序： 时间复杂度O（n2）；空间复杂度O（1） 稳定；</p>
+<p>3、归并排序： 时间复杂度O（nlogn）;空间复杂度O（1） 稳定；</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" rel="tag">排序算法</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
       <article id="post-0327-5" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -420,54 +589,6 @@
       
   <div id="article-tag">
     <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0327-4" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">几种排序算法</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1、快排排序： 时间复杂度O（nlogn） ；空间复杂度O（nlogn） 不稳定；</p>
-<p>2、冒泡排序： 时间复杂度O（n2）；空间复杂度O（1） 稳定；</p>
-<p>3、归并排序： 时间复杂度O（nlogn）;空间复杂度O（1） 稳定；</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" rel="tag">排序算法</a></li></ul>
   </div>
 
 
@@ -525,104 +646,6 @@
 </article>
 
     
-      <article id="post-0327-7" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">数据库的MyISAM和InnoDB的区别</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>MyISAM的数据文件和索引文件分开的；而InnoDB的数据文件和索引文件在一起；</p>
-<p>区别：1、MyISAM非事务安全；而InnoDB事务安全；</p>
-<p>2、MyISAM支持表级锁；而InnoDB支持行级锁；</p>
-<p>3、前者支持全文索引；而后者不支持；</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0327-8" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">线程和进程的区别、通信方式</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>线程：cpu调度的最小单位；</p>
-<p>进程：系统资源分配的最小单位；</p>
-<p>线程通信方式：1、锁机制（互斥锁提供了以排他方式防止数据结构被并发修改的方法；<br>  读写锁允许多个线程同时读共享数据，而对写操作是互斥的。）；2、信号量机制；</p>
-<p>进程通风方式：1、消息队列；2、管道；3、信号量；</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
     
       <nav class="pagination" role="navigation">
   
@@ -639,7 +662,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/" rel="tag">JVM</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Redis/" rel="tag">Redis</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring/" rel="tag">Spring</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash%E7%B3%BB%E5%88%97/" rel="tag">hash系列</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/" rel="tag">maven</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" rel="tag">排序算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E8%AE%B0/" rel="tag">杂记</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/" rel="tag">测试开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%86%E9%A2%91/" rel="tag">视频</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%94%81/" rel="tag">锁</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/" rel="tag">JVM</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Redis/" rel="tag">Redis</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring/" rel="tag">Spring</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash%E7%B3%BB%E5%88%97/" rel="tag">hash系列</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/" rel="tag">maven</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" rel="tag">排序算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E8%AE%B0/" rel="tag">杂记</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E5%BC%80/" rel="tag">测开</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/" rel="tag">测试开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%86%E9%A2%91/" rel="tag">视频</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%94%81/" rel="tag">锁</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -663,11 +686,11 @@
           </li>
         
           <li>
-            <a href="/archives/undefined.html">Linux基础命令</a>
+            <a href="/archives/undefined.html">远景测开面试题</a>
           </li>
         
           <li>
-            <a href="/archives/undefined.html">多线程中Runnable和Callable的区别</a>
+            <a href="/archives/undefined.html">远景测开面试题</a>
           </li>
         
       </ul>
