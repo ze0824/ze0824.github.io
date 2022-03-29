@@ -107,7 +107,54 @@
 <div class="index-outer">
   <section class="index-main">
     
-      <article id="post-0322-10" class="h-entry article article-type-post"
+      <article id="post-0322-7" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-22T05:25:37.000Z" itemprop="datePublished">2022-03-22</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">HTTP和HTTPS的区别</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>HTTP：超文本传输协议，明文传输，安全性低；端口号80。</p>
+<p>HTTPS：超文本传输协议，通过SSL协议加密传输，需要申请CA证书，安全性高；端口号443。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-0322-1" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <p class="article-date">
@@ -125,7 +172,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">http1.0和http2.0的区别</a>
+      <a class="p-name article-title" href="/archives/undefined.html">Redis的高并发问题以及解决办法</a>
     </h1>
   
 
@@ -134,8 +181,9 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>http1.0：1、持久连接；2、请求管道化；3、增加缓存处理；4、增加POST字段，支持断点传输。</p>
-<p>http2.0：1、二进制分帧；2、多路复用；3、头部压缩；4、服务器推送。</p>
+        <p>1.缓存雪崩：Redis中大量缓存失效，同时大量请求发起，导致直接访问数据库，冲垮数据库服务器。解决办法是加锁、key值的失效时间设置成随机。</p>
+<p>2.缓存击穿：Redis中单个缓存失效，但是多个请求同时访问这个key，导致冲垮数据库。解决办法是加锁、设置缓存永不失效。</p>
+<p>3.缓存穿透：访问的数据在Redis和数据亏都没有，并发过大。解决办法是将无效的值也缓存，设置为null。</p>
 
       
     </div>
@@ -143,7 +191,7 @@
       
       
   <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Redis/" rel="tag">Redis</a></li></ul>
   </div>
 
 
@@ -249,7 +297,7 @@
 </article>
 
     
-      <article id="post-0322-13" class="h-entry article article-type-post"
+      <article id="post-0322-10" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <p class="article-date">
@@ -267,7 +315,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">MySQL的隔离级别</a>
+      <a class="p-name article-title" href="/archives/undefined.html">http1.0和http2.0的区别</a>
     </h1>
   
 
@@ -276,10 +324,8 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>1、已读未提交：发生脏读；</p>
-<p>2、已读已提交：发生可重复读；</p>
-<p>3、可重复读：发生幻读；</p>
-<p>4、可串行化：事务串行执行；</p>
+        <p>http1.0：1、持久连接；2、请求管道化；3、增加缓存处理；4、增加POST字段，支持断点传输。</p>
+<p>http2.0：1、二进制分帧；2、多路复用；3、头部压缩；4、服务器推送。</p>
 
       
     </div>
@@ -287,7 +333,7 @@
       
       
   <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a></li></ul>
   </div>
 
 
@@ -398,7 +444,7 @@
 </article>
 
     
-      <article id="post-0322-16" class="h-entry article article-type-post"
+      <article id="post-0322-13" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <p class="article-date">
@@ -416,7 +462,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">悲观锁与乐观锁的区别</a>
+      <a class="p-name article-title" href="/archives/undefined.html">MySQL的隔离级别</a>
     </h1>
   
 
@@ -425,10 +471,10 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>悲观锁：每次去拿数据的时候都认为别人会修改，所以每次在拿数据的时候都会上锁，这样别人想拿这个数据就会阻塞直到它拿到锁。</p>
-<p>乐观锁：每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在更新的时候会判断一下在此期间别人有没有去更新这个数据，可以使用版本号机制和CAS算法实现。</p>
-<p>区别：<strong>乐观锁适用于写比较少的情况下（多读场景）</strong>，即冲突真的很少发生的时候，这样可以省去了锁的开销，加大了系统的整个吞吐量。</p>
-<p>乐观锁的缺点：1、ABA问题；2、循环时间CPU开销大；3、只能保证一个共享变量的原子操作；</p>
+        <p>1、已读未提交：发生脏读；</p>
+<p>2、已读已提交：发生可重复读；</p>
+<p>3、可重复读：发生幻读；</p>
+<p>4、可串行化：事务串行执行；</p>
 
       
     </div>
@@ -436,7 +482,7 @@
       
       
   <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%94%81/" rel="tag">锁</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a></li></ul>
   </div>
 
 
@@ -494,7 +540,7 @@
 </article>
 
     
-      <article id="post-0322-4" class="h-entry article article-type-post"
+      <article id="post-0322-16" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <p class="article-date">
@@ -512,7 +558,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">equals()方法和==的区别</a>
+      <a class="p-name article-title" href="/archives/undefined.html">悲观锁与乐观锁的区别</a>
     </h1>
   
 
@@ -521,8 +567,10 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>==：常用于比较基本数据类型，比较的是数据的内存地址是否相同。</p>
-<p>equals()：没有进行重写的话，跟==相同；重写了的话比较的是数据值是否相同。</p>
+        <p>悲观锁：每次去拿数据的时候都认为别人会修改，所以每次在拿数据的时候都会上锁，这样别人想拿这个数据就会阻塞直到它拿到锁。</p>
+<p>乐观锁：每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在更新的时候会判断一下在此期间别人有没有去更新这个数据，可以使用版本号机制和CAS算法实现。</p>
+<p>区别：<strong>乐观锁适用于写比较少的情况下（多读场景）</strong>，即冲突真的很少发生的时候，这样可以省去了锁的开销，加大了系统的整个吞吐量。</p>
+<p>乐观锁的缺点：1、ABA问题；2、循环时间CPU开销大；3、只能保证一个共享变量的原子操作；</p>
 
       
     </div>
@@ -530,54 +578,7 @@
       
       
   <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0322-5" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">接口与抽象类的区别</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>相同点：都不能直接被实例化；需要实现了接口和方法才能被实例化</p>
-<p>不同点：接口只能定义抽象方法不能实现方法，抽象类既可以定义抽象方法，也可以实现方法；一个类可以有多个接口，但是只能有一个抽象类；接口强调的是功能，而抽象类强调的所属关系；接口实现implements，抽象类是extends。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li></ul>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%94%81/" rel="tag">锁</a></li></ul>
   </div>
 
 
@@ -606,7 +607,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/" rel="tag">JVM</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Redis/" rel="tag">Redis</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring/" rel="tag">Spring</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash%E7%B3%BB%E5%88%97/" rel="tag">hash系列</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/" rel="tag">maven</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" rel="tag">排序算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E8%AE%B0/" rel="tag">杂记</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E5%BC%80/" rel="tag">测开</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/" rel="tag">测试开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98/" rel="tag">算法题</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%86%E9%A2%91/" rel="tag">视频</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%94%81/" rel="tag">锁</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/" rel="tag">JVM</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Redis/" rel="tag">Redis</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring/" rel="tag">Spring</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash%E7%B3%BB%E5%88%97/" rel="tag">hash系列</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/" rel="tag">maven</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" rel="tag">排序算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E8%AE%B0/" rel="tag">杂记</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E5%BC%80/" rel="tag">测开</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/" rel="tag">测试开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98/" rel="tag">算法题</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%86%E9%A2%91/" rel="tag">视频</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%94%81/" rel="tag">锁</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -618,6 +619,14 @@
       <ul>
         
           <li>
+            <a href="/archives/undefined.html">final能不能修饰抽象类</a>
+          </li>
+        
+          <li>
+            <a href="/archives/undefined.html">Redis持久化机制</a>
+          </li>
+        
+          <li>
             <a href="/archives/undefined.html">数据库连接</a>
           </li>
         
@@ -627,14 +636,6 @@
         
           <li>
             <a href="/archives/undefined.html">JVM的GC垃圾回收机制</a>
-          </li>
-        
-          <li>
-            <a href="/archives/undefined.html">远景测开面试题</a>
-          </li>
-        
-          <li>
-            <a href="/archives/undefined.html">远景测开面试题</a>
           </li>
         
       </ul>

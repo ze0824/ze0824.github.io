@@ -107,6 +107,101 @@
 <div class="index-outer">
   <section class="index-main">
     
+      <article id="post-0327-16" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">远景测开算法题</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>给定一个二叉树的根节点 <code>root</code> ，返回 <em>它的 <strong>中序</strong> 遍历</em> 。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public List&lt;Integer&gt; inorderTraversal(TreeNode root) &#123;</span><br><span class="line">        ArrayList&lt;Integer&gt; res = new ArrayList&lt;&gt;();</span><br><span class="line">        Inorder(root,res);</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">    public void Inorder(TreeNode root,List&lt;Integer&gt; res)&#123;</span><br><span class="line">        if(root == null)&#123;</span><br><span class="line">            return ;</span><br><span class="line">        &#125;</span><br><span class="line">        Inorder(root.left,res);</span><br><span class="line">        res.add(root.val);</span><br><span class="line">        Inorder(root.right,res);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98/" rel="tag">算法题</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-0327-3" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">多线程中Runnable和Callable的区别</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>相同：1、都是用来编写多线程的接口；2、都采用Thread.start()启动；</p>
+<p>不同：1、Runnable不能异常抛出，而Callable可以；2、Runnable没有返回值，而Callable可以返回执行结果；</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
       <article id="post-0327-4" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -208,53 +303,6 @@
 </article>
 
     
-      <article id="post-0327-6" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">数据库索引的优缺点</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>优点：1、加快检索速度；2、加快表之间的连接；3、提高系统性能；</p>
-<p>缺点：1、消耗时间、内存；2、降低数据维护速度；</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
       <article id="post-0327-7" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -304,55 +352,6 @@
 </article>
 
     
-      <article id="post-0327-8" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">线程和进程的区别、通信方式</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>线程：cpu调度的最小单位；</p>
-<p>进程：系统资源分配的最小单位；</p>
-<p>线程通信方式：1、锁机制（互斥锁提供了以排他方式防止数据结构被并发修改的方法；<br>  读写锁允许多个线程同时读共享数据，而对写操作是互斥的。）；2、信号量机制；</p>
-<p>进程通风方式：1、消息队列；2、管道；3、信号量；</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
       <article id="post-0327-9" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -392,6 +391,102 @@
       
   <div id="article-tag">
     <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-0327-8" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">线程和进程的区别、通信方式</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>线程：cpu调度的最小单位；</p>
+<p>进程：系统资源分配的最小单位；</p>
+<p>线程通信方式：1、锁机制；2、信号量机制；</p>
+<p>进程通风方式：1、消息队列；2、管道；3、信号量；</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-0327-6" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">数据库索引的优缺点</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>优点：1、加快检索速度；2、加快表之间的连接；3、提高系统性能；</p>
+<p>缺点：1、消耗时间、内存；2、降低数据维护速度；</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
   </div>
 
 
@@ -496,101 +591,6 @@
 </article>
 
     
-      <article id="post-0322-7" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-22T05:25:37.000Z" itemprop="datePublished">2022-03-22</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">HTTP和HTTPS的区别</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>HTTP：超文本传输协议，明文传输，安全性低；端口号80。</p>
-<p>HTTPS：超文本传输协议，通过SSL协议加密传输，需要申请CA证书，安全性高；端口号443。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0322-1" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">Redis的高并发问题以及解决办法</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1.缓存雪崩：Redis中大量缓存失效，同时大量请求发起，导致直接访问数据库，冲垮数据库服务器。解决办法是加锁、key值的失效时间设置成随机。</p>
-<p>2.缓存击穿：Redis中单个缓存失效，但是多个请求同时访问这个key，导致冲垮数据库。解决办法是加锁、设置缓存永不失效。</p>
-<p>3.缓存穿透：访问的数据在Redis和数据亏都没有，并发过大。解决办法是将无效的值也缓存，设置为null。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Redis/" rel="tag">Redis</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
     
       <nav class="pagination" role="navigation">
   
@@ -609,7 +609,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/" rel="tag">JVM</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Redis/" rel="tag">Redis</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring/" rel="tag">Spring</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash%E7%B3%BB%E5%88%97/" rel="tag">hash系列</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/" rel="tag">maven</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" rel="tag">排序算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E8%AE%B0/" rel="tag">杂记</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E5%BC%80/" rel="tag">测开</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/" rel="tag">测试开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98/" rel="tag">算法题</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%86%E9%A2%91/" rel="tag">视频</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%94%81/" rel="tag">锁</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/" rel="tag">JVM</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Redis/" rel="tag">Redis</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring/" rel="tag">Spring</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash%E7%B3%BB%E5%88%97/" rel="tag">hash系列</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/" rel="tag">maven</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" rel="tag">排序算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E8%AE%B0/" rel="tag">杂记</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E5%BC%80/" rel="tag">测开</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/" rel="tag">测试开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98/" rel="tag">算法题</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%86%E9%A2%91/" rel="tag">视频</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%94%81/" rel="tag">锁</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -621,6 +621,14 @@
       <ul>
         
           <li>
+            <a href="/archives/undefined.html">final能不能修饰抽象类</a>
+          </li>
+        
+          <li>
+            <a href="/archives/undefined.html">Redis持久化机制</a>
+          </li>
+        
+          <li>
             <a href="/archives/undefined.html">数据库连接</a>
           </li>
         
@@ -630,14 +638,6 @@
         
           <li>
             <a href="/archives/undefined.html">JVM的GC垃圾回收机制</a>
-          </li>
-        
-          <li>
-            <a href="/archives/undefined.html">远景测开面试题</a>
-          </li>
-        
-          <li>
-            <a href="/archives/undefined.html">远景测开面试题</a>
           </li>
         
       </ul>
