@@ -107,6 +107,151 @@
 <div class="index-outer">
   <section class="index-main">
     
+      <article id="post-0327-7" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">数据库的MyISAM和InnoDB的区别</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>MyISAM的数据文件和索引文件分开的；而InnoDB的数据文件和索引文件在一起；</p>
+<p>区别：1、MyISAM非事务安全；而InnoDB事务安全；</p>
+<p>2、MyISAM支持表级锁；而InnoDB支持行级锁；</p>
+<p>3、前者支持全文索引；而后者不支持；</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-0327-9" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-26T16:00:00.000Z" itemprop="datePublished">2022-03-27</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">Java的异常类型</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p> 1、空指针异常；2、数据类型转换异常；3、输入输出异常等；</p>
+<p>异常抛出：throw 和 throws 的区别</p>
+<p>throw：<br>1） throw 语句用在方法体内，表示抛出异常，由方法体内的语句处理。<br>2） throw 是具体向外抛出异常的动作，所以它抛出的是一个异常实例，执行 throw 一定是抛出了某种异常。<br>throws：<br>1） throws 语句是用在方法声明后面，表示如果抛出异常，由该方法的调用者来进行异常的处理。<br>2） throws 主要是声明这个方法会抛出某种类型的异常，让它的使用者要知道需要捕获的异常的类型。<br>3） throws 表示出现异常的一种可能性，并不一定会发生这种异常。</p>
+<h3 id="final、-finally、-finalize-的区别"><a href="#final、-finally、-finalize-的区别" class="headerlink" title="final、 finally、 finalize 的区别"></a>final、 finally、 finalize 的区别</h3><p>1） final：用于声明属性，方法和类，分别表示属性不可变，方法不可覆盖，被其修饰的类不可继承。<br>2） finally：异常处理语句结构的一部分，表示总是执行。<br>3） finalize： Object 类的一个方法，在垃圾回收器执行的时候会调用被回收对象的此方法，可以覆盖此方法<br>提供垃圾收集时的其他资源回收，例如关闭文件等。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-0322-3" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-22T05:25:37.000Z" itemprop="datePublished">2022-03-22</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">HashMap的底层实现</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>JDK1.8之前底层实现是数组+链表，采用头插法，容易造成环形链表和死循环。</p>
+<p>JDK1.8之后底层实现是数组+红黑树，采用尾插法，避免了环形链表和死循环，但是并发下的key值也可能被覆盖。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
       <article id="post-0322-6" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -296,52 +441,6 @@
 </article>
 
     
-      <article id="post-0322-11" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">测试用例的设计</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p> 1、功能性；2、安全性；3、可靠性；4、可移植性；5、兼容性；6、疲劳测试；7、压力测试。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/" rel="tag">测试开发</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
       <article id="post-0322-12" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -381,6 +480,52 @@
       
   <div id="article-tag">
     <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-0322-11" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">测试用例的设计</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p> 1、功能性；2、安全性；3、可靠性；4、可移植性；5、兼容性；6、疲劳测试；7、压力测试。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/" rel="tag">测试开发</a></li></ul>
   </div>
 
 
@@ -440,155 +585,6 @@
 </article>
 
     
-      <article id="post-0322-14" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">TCP和UDP的区别</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1、TCP有连接，UDP没有连接；</p>
-<p>2、TCP消耗cpu大，而UDP消耗小；</p>
-<p>3、TCP可靠；而UDP不可靠；</p>
-<p>4、TCP支持一对一，而UDP支持一对多，多对多；</p>
-<p>5、TCP有流量和拥塞控制，而UDP没有；</p>
-<p>6、TCP是字节流模式，而UDP是报文模式；</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0322-15" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">HashMap和HashTable的区别</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1、安全性：HashMap是非线程安全的，而HashTable是线程安全的；</p>
-<p>2、效率性：HashMap比HashTable效率更高；</p>
-<p>3、null：HashMap支持null key 和null value，而HashMap不支持；</p>
-<p>4、HashMap初始化容量16，容量扩容为2n，而HashTable的初始容量为11，扩容为2n+1；</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hash%E7%B3%BB%E5%88%97/" rel="tag">hash系列</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-0322-16" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">悲观锁与乐观锁的区别</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>悲观锁：每次去拿数据的时候都认为别人会修改，所以每次在拿数据的时候都会上锁，这样别人想拿这个数据就会阻塞直到它拿到锁。</p>
-<p>乐观锁：每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在更新的时候会判断一下在此期间别人有没有去更新这个数据，可以使用版本号机制和CAS算法实现。</p>
-<p>区别：<strong>乐观锁适用于写比较少的情况下（多读场景）</strong>，即冲突真的很少发生的时候，这样可以省去了锁的开销，加大了系统的整个吞吐量。</p>
-<p>乐观锁的缺点：1、ABA问题；2、循环时间CPU开销大；3、只能保证一个共享变量的原子操作；</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%94%81/" rel="tag">锁</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
     
       <nav class="pagination" role="navigation">
   
@@ -607,7 +603,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/" rel="tag">JVM</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Redis/" rel="tag">Redis</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring/" rel="tag">Spring</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash%E7%B3%BB%E5%88%97/" rel="tag">hash系列</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/" rel="tag">maven</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" rel="tag">排序算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E5%BC%80/" rel="tag">测开</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/" rel="tag">测试开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98/" rel="tag">算法题</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%94%81/" rel="tag">锁</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/" rel="tag">JVM</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java%E5%9F%BA%E7%A1%80/" rel="tag">Java基础</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Redis/" rel="tag">Redis</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring/" rel="tag">Spring</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash%E7%B3%BB%E5%88%97/" rel="tag">hash系列</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/" rel="tag">maven</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" rel="tag">排序算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E5%BC%80/" rel="tag">测开</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/" rel="tag">测试开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98/" rel="tag">算法题</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%94%81/" rel="tag">锁</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -619,23 +615,23 @@
       <ul>
         
           <li>
+            <a href="/archives/undefined.html">Mysql的锁机制</a>
+          </li>
+        
+          <li>
+            <a href="/archives/undefined.html">Mysql的存储引擎</a>
+          </li>
+        
+          <li>
+            <a href="/archives/undefined.html">list、set、map的区别</a>
+          </li>
+        
+          <li>
             <a href="/archives/undefined.html">idea实现归并排序</a>
           </li>
         
           <li>
             <a href="/archives/undefined.html">final能不能修饰抽象类</a>
-          </li>
-        
-          <li>
-            <a href="/archives/undefined.html">Redis持久化机制</a>
-          </li>
-        
-          <li>
-            <a href="/archives/undefined.html">数据库连接</a>
-          </li>
-        
-          <li>
-            <a href="/archives/undefined.html">多线程五种状态、实现步骤</a>
           </li>
         
       </ul>

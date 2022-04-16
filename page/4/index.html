@@ -107,6 +107,55 @@
 <div class="index-outer">
   <section class="index-main">
     
+      <article id="post-0322-15" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">HashMap和HashTable的区别</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1、安全性：HashMap是非线程安全的，而HashTable是线程安全的；</p>
+<p>2、效率性：HashMap比HashTable效率更高；</p>
+<p>3、null：HashMap支持null key 和null value，而HashMap不支持；</p>
+<p>4、HashMap初始化容量16，容量扩容为2n，而HashTable的初始容量为11，扩容为2n+1；</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hash%E7%B3%BB%E5%88%97/" rel="tag">hash系列</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
       <article id="post-0322-2" class="h-entry article article-type-post"
   itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -144,6 +193,55 @@
       
   <div id="article-tag">
     <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-0322-16" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">悲观锁与乐观锁的区别</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>悲观锁：每次去拿数据的时候都认为别人会修改，所以每次在拿数据的时候都会上锁，这样别人想拿这个数据就会阻塞直到它拿到锁。</p>
+<p>乐观锁：每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在更新的时候会判断一下在此期间别人有没有去更新这个数据，可以使用版本号机制和CAS算法实现。</p>
+<p>区别：<strong>乐观锁适用于写比较少的情况下（多读场景）</strong>，即冲突真的很少发生的时候，这样可以省去了锁的开销，加大了系统的整个吞吐量。</p>
+<p>乐观锁的缺点：1、ABA问题；2、循环时间CPU开销大；3、只能保证一个共享变量的原子操作；</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%94%81/" rel="tag">锁</a></li></ul>
   </div>
 
 
@@ -276,6 +374,57 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p> 1、客户端发起HTTPS请求 —&gt; 2、服务端配置 —&gt; 3、传送证书 —&gt;4、客户端解析证书 —&gt; 5、信息加密传送 —&gt; 6、服务端解密信息 —&gt; 7、加密后的信息传输 —&gt; 8、客户端解密信息</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <div id="article-tag">
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a></li></ul>
+  </div>
+
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+    
+      <article id="post-0322-14" class="h-entry article article-type-post"
+  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <p class="article-date">
+  <time class="dt-published" datetime="2022-03-21T16:00:00.000Z" itemprop="datePublished">2022-03-22</time>
+</p>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/archives/undefined.html">TCP和UDP的区别</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1、TCP有连接，UDP没有连接；</p>
+<p>2、TCP消耗cpu大，而UDP消耗小；</p>
+<p>3、TCP可靠；而UDP不可靠；</p>
+<p>4、TCP支持一对一，而UDP支持一对多，多对多；</p>
+<p>5、TCP有流量和拥塞控制，而UDP没有；</p>
+<p>6、TCP是字节流模式，而UDP是报文模式；</p>
 
       
     </div>
@@ -442,157 +591,6 @@
 </article>
 
     
-      <article id="post-day7" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-02-25T14:22:11.000Z" itemprop="datePublished">2022-02-25</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">springboot</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="初步搭建springboot应用，报错：Failed-to-configure-a-DataSource-‘url’-attribute-is-not-specified-and-no-embedd"><a href="#初步搭建springboot应用，报错：Failed-to-configure-a-DataSource-‘url’-attribute-is-not-specified-and-no-embedd" class="headerlink" title="初步搭建springboot应用，报错：Failed to configure a DataSource: ‘url’ attribute is not specified and no embedd"></a>初步搭建springboot应用，报错：Failed to configure a DataSource: ‘url’ attribute is not specified and no embedd</h1><p>原因是pom文件打包成了pom，去掉<packaging>pom</packaging>即可。所有的父级项目的pom文件的打包方式都要设置成pom，子项目设置为jar或者不设置（默认为jar），如果纯一个项目不设置<packaging>默认打包为jar即可。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-day6" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2022-01-06T13:59:26.000Z" itemprop="datePublished">2022-01-06</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">maven的安装与配置</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1.下载maven</p>
-<p><img src="https://img-blog.csdnimg.cn/2021042022371177.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTkwMTg1,size_16,color_FFFFFF,t_70"></p>
-<p><img src="https://img-blog.csdnimg.cn/20210420225426760.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTkwMTg1,size_16,color_FFFFFF,t_70"></p>
-<hr>
-      
-        <p class="article-more-link">
-          <a href="/archives/undefined.html#more">Read More</a>
-        </p>
-      
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/maven/" rel="tag">maven</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
-      <article id="post-day3" class="h-entry article article-type-post"
-  itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <p class="article-date">
-  <time class="dt-published" datetime="2021-12-18T12:05:08.000Z" itemprop="datePublished">2021-12-18</time>
-</p>
-
-    
-
-  </div>
-  <div class="article-inner">
-    
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/archives/undefined.html">端口被占用解决办法</a>
-    </h1>
-  
-
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="服务端口被占用的解决办法"><a href="#服务端口被占用的解决办法" class="headerlink" title="服务端口被占用的解决办法"></a>服务端口被占用的解决办法</h3><p>参照3306端口：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">netstat  -aon|findstr 3306</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>通过pid号来查找占用的服务</p>
-<p><img src="https://img-blog.csdnimg.cn/20200502183750948.png"></p>
-<p><strong>ctrl +shift+esc调出任务管理器</strong></p>
-<p><img src="https://img-blog.csdnimg.cn/20200502184341549.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjE5NDYx,size_16,color_FFFFFF,t_70"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-  <div id="article-tag">
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li></ul>
-  </div>
-
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-    
     
       <nav class="pagination" role="navigation">
   
@@ -611,7 +609,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/" rel="tag">JVM</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Redis/" rel="tag">Redis</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring/" rel="tag">Spring</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash%E7%B3%BB%E5%88%97/" rel="tag">hash系列</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/" rel="tag">maven</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" rel="tag">排序算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E5%BC%80/" rel="tag">测开</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/" rel="tag">测试开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98/" rel="tag">算法题</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%94%81/" rel="tag">锁</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/" rel="tag">JVM</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java%E5%9F%BA%E7%A1%80/" rel="tag">Java基础</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Redis/" rel="tag">Redis</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring/" rel="tag">Spring</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash%E7%B3%BB%E5%88%97/" rel="tag">hash系列</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/" rel="tag">maven</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" rel="tag">排序算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E5%BC%80/" rel="tag">测开</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/" rel="tag">测试开发</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98/" rel="tag">算法题</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%94%81/" rel="tag">锁</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -623,23 +621,23 @@
       <ul>
         
           <li>
+            <a href="/archives/undefined.html">Mysql的锁机制</a>
+          </li>
+        
+          <li>
+            <a href="/archives/undefined.html">Mysql的存储引擎</a>
+          </li>
+        
+          <li>
+            <a href="/archives/undefined.html">list、set、map的区别</a>
+          </li>
+        
+          <li>
             <a href="/archives/undefined.html">idea实现归并排序</a>
           </li>
         
           <li>
             <a href="/archives/undefined.html">final能不能修饰抽象类</a>
-          </li>
-        
-          <li>
-            <a href="/archives/undefined.html">Redis持久化机制</a>
-          </li>
-        
-          <li>
-            <a href="/archives/undefined.html">数据库连接</a>
-          </li>
-        
-          <li>
-            <a href="/archives/undefined.html">多线程五种状态、实现步骤</a>
           </li>
         
       </ul>
